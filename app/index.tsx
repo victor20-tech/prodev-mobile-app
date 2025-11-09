@@ -1,5 +1,5 @@
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-import { ImageBackground, View, Text, TouchableOpacity, Image, Dimensions} from "react-native";
+import { ImageBackground, View, Text, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles/_mainstyle";
 import { BACKGROUNDIMAGE, HEROLOGO} from "@/constants";
 

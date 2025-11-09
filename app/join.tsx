@@ -113,7 +113,6 @@ export default function Join() {
             <Text style={styles.signupSubTitleText}>Sign in</Text>
           </TouchableOpacity>
         </View>
-
       </SafeAreaView>
     </SafeAreaProvider>
   );

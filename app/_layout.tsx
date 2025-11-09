@@ -6,7 +6,7 @@ export default function RootLayout() {
       headerShown: false,
     }}>
       <Stack.Screen name="/" />
-      <Stack.Screen name="sign" />i
+      <Stack.Screen name="sign" />
       <Stack.Screen name="join" />
     </Stack>
   );
