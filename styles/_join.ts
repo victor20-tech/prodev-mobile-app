@@ -3,16 +3,16 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 20
+    paddingHorizontal: 10
   },
   iconsection: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 22
+    // marginTop: 5
   },
   titleTextGroup: {
-    marginTop: 20
+    marginTop: 10
   },
   titleText: {
     fontWeight: 700,
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     color: '#7E7B7B'
   },
   formGroup: {
-    marginTop: 44,
+    marginTop: 5,
     rowGap: 10
   },
   formLabel: {

@@ -2,8 +2,18 @@ import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { ImageBackground, View, Text, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles/_mainstyle";
 import { BACKGROUNDIMAGE, HEROLOGO} from "@/constants";
+import { router } from "expo-router";
 
 export default function Index() {
+
+    const handleJoinNow = () => {
+    router.push("/join"); 
+};
+
+const handleSignIn = () => {
+    router.push("/signin");
+};
+
   return(
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
@@ -36,14 +46,14 @@ export default function Index() {
               {/* Button Group For Navigation */}
               <View style={styles.buttonGroup}>
                 {/* Primary Button (JOIN NOW) */}
-                <TouchableOpacity style={styles.buttonPrimary}>
+                <TouchableOpacity style={styles.buttonPrimary} onPress={handleJoinNow}>
                   <Text style={styles.buttonPrimaryText}>
                     JOIN NOW
                   </Text>
                 </TouchableOpacity>
 
                 {/* Secondary Button (SIGN IN) */}
-                <TouchableOpacity style={styles.buttonSecondary}>
+                <TouchableOpacity style={styles.buttonSecondary} onPress={handleSignIn}>
                   <Text style={styles.buttonSecondaryText}>
                     SIGN IN
                   </Text>
