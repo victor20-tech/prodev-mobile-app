@@ -1,4 +1,5 @@
 import { Stack } from "expo-router";
+import { View } from 'react-native'
 
 export default function RootLayout() {
   return (
@@ -6,8 +7,8 @@ export default function RootLayout() {
       headerShown: false,
     }}>
       <Stack.Screen name="/" />
-      <Stack.Screen name="sign" />
       <Stack.Screen name="join" />
+      <Stack.Screen name="signin" />
     </Stack>
   );
 }
